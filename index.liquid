@@ -19,11 +19,43 @@
       </header>
 
       <section class="video-section">
-        <h2>Product Hero Video (Coming Soon)</h2>
-        <p>
-          This section will contain the HTML5 <code>&lt;video&gt;</code> player and subtitle tracks in the next commits.
+        <h2>Product Hero Video</h2>
+        <p class="video-description">
+          HTML5 video with multi-language subtitles. In a real Shopify theme, the video and subtitle files
+          would be served from the Shopify CDN via Liquid filters.
         </p>
+
+        <div class="video-wrapper">
+          <video
+            id="product-video"
+            class="video-player"
+            controls
+            preload="metadata"
+            poster="assets/product-video-poster.jpg"
+          >
+            <!-- In Shopify, you would use something like: {{ 'product-video.mp4' | file_url }} -->
+            <source src="assets/product-video.mp4" type="video/mp4">
+
+            <!-- Subtitles: placeholder VTT files for now -->
+            <track
+              label="English"
+              kind="subtitles"
+              srclang="en"
+              src="assets/subtitles-en.vtt"
+              default
+            >
+            <track
+              label="Deutsch"
+              kind="subtitles"
+              srclang="de"
+              src="assets/subtitles-de.vtt"
+            >
+
+            Sorry, your browser does not support embedded videos.
+          </video>
+        </div>
       </section>
+
     </main>
 
     <script src="assets/video.js"></script>
