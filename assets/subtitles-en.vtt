@@ -1,0 +1,10 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.000
+Welcome to our product hero video.
+
+00:00:03.000 --> 00:00:07.000
+In this demo, we showcase a Shopify-style video component built with Liquid.
+
+00:00:07.000 --> 00:00:11.000
+You can add multiple subtitle tracks to make your content accessible in different languages.
