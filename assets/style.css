@@ -62,3 +62,10 @@ video::cue {
   color: #ffffff;
   font-size: 0.95rem;
 }
+
+.captions-hint {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: #9fa4ba;
+  }
+  
